@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F866A0419DA5E40B94940F9 /* Pods_ExTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5430E7B17143B86FB5FC257 /* Pods_ExTap.framework */; };
 		C6337FBC27F1A0CB0057521C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6337FBB27F1A0CB0057521C /* AppDelegate.swift */; };
 		C6337FBE27F1A0CB0057521C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6337FBD27F1A0CB0057521C /* SceneDelegate.swift */; };
 		C6337FC027F1A0CB0057521C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6337FBF27F1A0CB0057521C /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CC63BAEB9B393592462DCB9 /* Pods-ExTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExTap.release.xcconfig"; path = "Target Support Files/Pods-ExTap/Pods-ExTap.release.xcconfig"; sourceTree = "<group>"; };
+		A5430E7B17143B86FB5FC257 /* Pods_ExTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6337FB827F1A0CB0057521C /* ExTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6337FBB27F1A0CB0057521C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6337FBD27F1A0CB0057521C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C6337FC427F1A0CD0057521C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6337FC727F1A0CD0057521C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6337FC927F1A0CD0057521C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40487863B0A015F61E31986 /* Pods-ExTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExTap.debug.xcconfig"; path = "Target Support Files/Pods-ExTap/Pods-ExTap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F866A0419DA5E40B94940F9 /* Pods_ExTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E7B2BACD3F67899086660CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40487863B0A015F61E31986 /* Pods-ExTap.debug.xcconfig */,
+				2CC63BAEB9B393592462DCB9 /* Pods-ExTap.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		767F8460989EF85BB675A9A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5430E7B17143B86FB5FC257 /* Pods_ExTap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6337FAF27F1A0CA0057521C = {
 			isa = PBXGroup;
 			children = (
 				C6337FBA27F1A0CB0057521C /* ExTap */,
 				C6337FB927F1A0CB0057521C /* Products */,
+				3E7B2BACD3F67899086660CD /* Pods */,
+				767F8460989EF85BB675A9A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6337FCC27F1A0CD0057521C /* Build configuration list for PBXNativeTarget "ExTap" */;
 			buildPhases = (
+				376F501891B720D29ACB602B /* [CP] Check Pods Manifest.lock */,
 				C6337FB427F1A0CB0057521C /* Sources */,
 				C6337FB527F1A0CB0057521C /* Frameworks */,
 				C6337FB627F1A0CB0057521C /* Resources */,
+				D780177CB86B8DBEA4E81F3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		376F501891B720D29ACB602B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExTap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D780177CB86B8DBEA4E81F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExTap/Pods-ExTap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExTap/Pods-ExTap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExTap/Pods-ExTap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6337FB427F1A0CB0057521C /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C6337FCD27F1A0CD0057521C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40487863B0A015F61E31986 /* Pods-ExTap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		C6337FCE27F1A0CD0057521C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC63BAEB9B393592462DCB9 /* Pods-ExTap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

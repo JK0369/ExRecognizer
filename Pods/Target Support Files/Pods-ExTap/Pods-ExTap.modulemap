@@ -1,0 +1,6 @@
+framework module Pods_ExTap {
+  umbrella header "Pods-ExTap-umbrella.h"
+
+  export *
+  module * { export * }
+}
